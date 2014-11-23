@@ -21,5 +21,5 @@ func main() {
 	router.HandleFunc("/{location_name}/{zoom:[0-9]+}/{x:[0-9]+}x{y:[0-9]+}", MapGeoImg.HandleMapboxGeoToImageRequest)
 	n := negroni.Classic()
 	n.UseHandler(router)
-	n.Run(":3000")
+	n.Run(":" + os.Getenv("PORT"))
 }

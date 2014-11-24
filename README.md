@@ -12,7 +12,7 @@ Sample Server: https://mapboxgeoimage.herokuapp.com/Berlin/10/1280x120
 
 ##How to build your own API Server
 
-```golang
+```go
 package main
 
 import (
